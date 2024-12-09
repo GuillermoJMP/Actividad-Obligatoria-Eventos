@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"); /* Fuente estilo pirata */
+
+body {
+  font-family: "Pirata One", cursive; /* Cambia la tipografía */
+  background-image: url("Media/FondoPirata.jpeg"); /* Imagen de fondo */
+  background-size: cover; /* Asegura que cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita repeticiones */
+  height: 100vh; /* Altura completa de la ventana */
+  width: 100vw; /* Ancho completo de la ventana */
+  margin: 0; /* Sin márgenes */
+  overflow: hidden; /* Elimina barras de desplazamiento */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+#game-logo {
+  width: 150px;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.player-pieces {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.piece {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  cursor: grab;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  padding: 5px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-image: url("Media/FondoCuadrados.png"); /* Fondo de cada celda */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell.occupied img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Botón de reinicio como imagen */
+#reset {
+  margin-top: 20px;
+  width: 200px; /* Ancho del botón */
+  height: 150px; /* Altura del botón */
+  background-image: url("Media/Reiniciar.png"); /* Ruta de la imagen */
+  background-size: contain; /* Ajusta la imagen al tamaño del botón */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-position: center; /* Centra la imagen */
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Apariencia de botón */
+  outline: none; /* Sin contorno */
+  display: block; /* Asegura que el botón se renderice */
+}
+
+#reset:hover {
+  opacity: 0.8; /* Efecto de opacidad al pasar el ratón */
+}
+
+.hidden {
+  display: none;
+}
+
+#winner-message {
+  margin-top: 20px;
+  font-size: 40px;
+  color: green;
+  text-shadow: 1px 1px 2px black;
+}
+
+#turn-indicator {
+  margin-top: 20px;
+  font-size: 40px;
+  color: rgb(204, 65, 33);
+  text-shadow: 1px 1px 2px black;
+}

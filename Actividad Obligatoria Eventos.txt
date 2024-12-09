@@ -1,0 +1,5 @@
+Crea una web que implemente mediante eventos el juego de las 3 en raya.
+El tablero se crea de forma estática desde el HTML, y tendremos 3 fichas para cada jugador posicionadas a los lados del tablero. El juego terminará cuando uno de los jugadores complete las 3 en raya. El inicio del juego será aleatorio.
+No es necesario implementar el juego hasta que haya un ganador, con tres tiradas por usuario es suficiente.
+
+Mejoras: implementar el juego hasta que haya un ganador. 
